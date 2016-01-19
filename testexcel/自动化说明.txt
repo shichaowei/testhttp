@@ -1,0 +1,33 @@
+'所有都是判断字符串，数字也是需要转换为字符串判断'
+配置文件：
+redis需要有相应的key value值，修改token为‘78825254’；如没有，先执行login操作
+login和logout要放在最后执行，logout之后，token会丢失
+uid:1820
+token是：78825254
+secretkey：12345678  另外一家公司secretkey：12345679
+station id是：1142
+car id是：1120
+
+支付准备接口:1547  Z5092768353128237 amount 10.7 这个是需要app端或者接口生成(1.需要提前修改testpaypre 文件中的orderid，amount--注意207的不能amount修改成正确的 2.需要在取消订单接口之前进行 )paypre
+
+取消订单检查接口：订单id（数字）1380 (1.修改create_time时间为现在时间推迟2小时 2.id为app生成的一个订单（未支付or已支付）id号)ordercanche
+
+
+取消订单接口：使用取消订单检查接口中的id                      ordercancle
+
+订单详情接口： 使用取消订单检查接口中的id order_id 		 orderdetail
+
+删除历史订单：使用取消订单检查接口的id                         orddelhis
+
+
+
+删除发票抬头接口 ：发票id 31
+
+根据城市获取区域列表接口：cityid 3 杭州
+
+
+缺陷：
+1.orderdelhistory接口中，test add parameter failed会出现，不是问题；做完之后要修改数据库，恢复环境，
+UPDATE edn_user_car_order SET user_deleted=0 WHERE id=1547;
+
+

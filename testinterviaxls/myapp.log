@@ -1,0 +1,21 @@
+Tue, 12 Jan 2016 19:40:07 [line:26] 
+
+Tue, 12 Jan 2016 19:40:07 [line:27] START
+Tue, 12 Jan 2016 19:40:07 [line:38] ulr parameter is/invoice/billingcheck
+Tue, 12 Jan 2016 19:40:07 [line:43] {"secretkey": "12345789", "token": "29756397", "uid": "1001", "orderIds": ["Z6059993496731875", "Z6051828220366875"]}
+Tue, 12 Jan 2016 19:40:07 [line:58] {"amount":"64.0","identification":"6d67446f-b0b0-4ed0-a5eb-ea2854804306","invoceTitles":[{"deleted":0,"id":1002,"postcode":"123","receiver":"123","receiverAddress":"123","receiverMobile":"123","title":"","uid":1001},{"deleted":0,"id":1003,"postcode":"123","receiver":"123","receiverAddress":"123","receiverMobile":"123","title":"","uid":1001},{"deleted":0,"id":1001,"postcode":"123","receiver":"123","receiverAddress":"123","receiverMobile":"123","title":"","uid":1001},{"deleted":0,"id":1004,"postcode":"123","receiver":"123","receiverAddress":"123","receiverMobile":"123","title":"testInsertTitle","uid":1001}],"properties":{},"resultCode":200,"resultMessage":"成功","sourceId":0}
+Tue, 12 Jan 2016 19:40:07 [line:32] test code=200 pass
+Tue, 12 Jan 2016 19:40:07 [line:32] START less parameter AND add  parameter
+Tue, 12 Jan 2016 19:40:07 [line:38] ulr parameter is/invoice/billingcheck
+Tue, 12 Jan 2016 19:40:07 [line:43] {"token": "29756397", "uid": "1001", "orderIds": ["Z6059993496731875", "Z6051828220366875"]}
+Tue, 12 Jan 2016 19:40:07 [line:58] {"identification":"fcde9ef9-bf4b-4639-a76b-abaf1dc423fb","properties":{},"resultCode":498,"resultMessage":"secretkey 不能为空","sourceId":0}
+Tue, 12 Jan 2016 19:40:07 [line:38] ulr parameter is/invoice/billingcheck
+Tue, 12 Jan 2016 19:40:07 [line:43] {"secretkey": "12345789", "uid": "1001", "orderIds": ["Z6059993496731875", "Z6051828220366875"]}
+Tue, 12 Jan 2016 19:40:07 [line:58] {"identification":"b8718328-5d7e-4f60-bb95-606809e7119f","properties":{},"resultCode":202,"resultMessage":"token 不能为空","sourceId":0}
+Tue, 12 Jan 2016 19:40:07 [line:38] ulr parameter is/invoice/billingcheck
+Tue, 12 Jan 2016 19:40:07 [line:43] {"secretkey": "12345789", "token": "29756397", "orderIds": ["Z6059993496731875", "Z6051828220366875"]}
+Tue, 12 Jan 2016 19:40:07 [line:58] {"identification":"1ac7b7e9-48fb-4513-a33c-9cd909a86cb9","properties":{},"resultCode":201,"resultMessage":"uid 不能为空","sourceId":0}
+Tue, 12 Jan 2016 19:40:07 [line:38] ulr parameter is/invoice/billingcheck
+Tue, 12 Jan 2016 19:40:07 [line:43] {"secretkey": "12345789", "token": "29756397", "uid": "1001"}
+Tue, 12 Jan 2016 19:40:08 [line:58] {"identification":"6cdcfad8-9896-4301-83da-0364f938f9ec","properties":{},"resultCode":203,"resultMessage":"订单编号不能为空","sourceId":0}
+Tue, 12 Jan 2016 19:40:08 [line:32] FINISH less parameter AND add  parameter
